@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hola Mundo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Advanced World</title>
+    <style>
+        /* CSS for styling the page */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #005f7a;
+        }
+        p#message {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>¡Hola, Mundo!</h1>
+    <div class="container">
+        <h1>¡Hola, Mundo Avanzado!</h1>
+        <p>Este es un ejemplo de una página web más completa con estilos y funcionalidad.</p>
+        <button id="myButton">Haz Clic Aquí</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        // JavaScript for interactivity
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.getElementById('message').textContent = '¡Has hecho clic en el botón!';
+        });
+    </script>
 
 </body>
 </html>
